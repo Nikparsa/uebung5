@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco ArtVoyage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Eco ArtVoyage</h1>
+        <nav>
+            <ul>
+                <li><button id="homeTab">Home</button></li>
+                <li><button id="challengesTab">Challenges</button></li>
+                <li><button id="profileTab">Profile</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="homeSection" class="active">
+            <h2>Welcome to Eco ArtVoyage</h2>
+            <p>Explore and complete challenges to learn more about eco-friendly practices.</p>
+            <button id="startChallenge">Start a Challenge</button>
+        </section>
+        
+        <!-- Challenges Section -->
+        <section id="challengesSection">
+            <h2>Challenges</h2>
+            <div id="challengeContainer"></div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profileSection">
+            <h2>Profile</h2>
+            <p>Track your completed challenges and achievements.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Eco ArtVoyage</p>
+    </footer>
+</body>
+</html>
