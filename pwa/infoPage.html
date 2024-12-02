@@ -1,137 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Info Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .header {
-      width: 100%;
-      padding: 10px;
-      text-align: left;
-    }
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <title>Info Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .header a {
-      text-decoration: none;
-      font-size: 20px;
-      color: black;
-    }
+        .back-arrow {
+            width: 100%;
+            padding: 10px;
+            font-size: 50px;
+            font-weight: bolder;
+            margin-left: 20px;
+            text-align: left;
+        }
 
-    .content {
-      width: 100%;
-      max-width: 400px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+        .header a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
 
-    .section {
-      background-color: #dfe7df;
-      border-radius: 15px;
-      padding: 20px;
-      text-align: center;
-    }
+        .content {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-    .section.gray {
-      background-color: #d7d7d7;
-    }
+        .section {
+            background-color: #dfe7df;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
 
-    .section.light-yellow {
-      background-color: #f1f7dc;
-    }
+        .section.gray {
+            background-color: #d7d7d7;
+        }
 
-    .section.green {
-      background-color: #e6f4e6;
-    }
+        .section.light-yellow {
+            background-color: #f1f7dc;
+        }
 
-    .section h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
+        .section.green {
+            background-color: #e6f4e6;
+        }
 
-    .section p, .section ul {
-      font-size: 16px;
-      color: #555;
-      margin: 0;
-      text-align: left;
-    }
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
 
-    .section ul {
-      padding-left: 20px;
-    }
+        .section p, .section ul {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+            text-align: left;
+        }
 
-    .footer {
-      width: 100%;
-      text-align: center;
-      background-color: #fef6f6;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      border-top: 1px solid #ddd;
-    }
+        .section ul {
+            padding-left: 20px;
+        }
 
-    .footer p {
-      font-size: 16px;
-      color: black;
-    }
+        .footer {
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+            background-color: #fef6f6;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            border-top: 1px solid #ddd;
+        }
 
-    .footer .icon {
-      font-size: 24px;
-    }
-  </style>
+        .footer p {
+            font-size: 16px;
+            color: black;
+        }
+
+        .footer .icon {
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="header">
-    <a href="javascript:void(0)">&#8592;</a>
-  </div>
+<a href="firstPage.html" class="back-arrow">
+    <span class="material-symbols-rounded">arrow_back</span>
+</a>
 
-  <div class="content">
+<div class="content">
     <div class="section">
-      <h2>How to use Eco ArtVoyage</h2>
+        <h2>How to use Eco ArtVoyage</h2>
     </div>
 
     <div class="section gray">
-      <h2>Daily-Challenges</h2>
-      <p>Complete daily eco-friendly challenges to earn points and unlock new challenges.</p>
+        <h2>Daily-Challenges</h2>
+        <p>Complete daily eco-friendly challenges to earn points and unlock new challenges.</p>
     </div>
 
     <div class="section light-yellow">
-      <h2>Categories</h2>
-      <ul>
-        <li>Green materials</li>
-        <li>Upcycling</li>
-        <li>Nature Art</li>
-        <li>Digital Art</li>
-      </ul>
+        <h2>Categories</h2>
+        <ul>
+            <li>Green materials</li>
+            <li>Upcycling</li>
+            <li>Nature Art</li>
+            <li>Digital Art</li>
+        </ul>
     </div>
 
     <div class="section green">
-      <h2>Getting Started</h2>
-      <ul>
-        <li>Select a daily challenge</li>
-        <li>Educate yourself</li>
-        <li>Unlock new challenges</li>
-        <li>Submit your creation</li>
-      </ul>
+        <h2>Getting Started</h2>
+        <ul>
+            <li>Select a daily challenge</li>
+            <li>Educate yourself</li>
+            <li>Unlock new challenges</li>
+            <li>Submit your creation</li>
+        </ul>
     </div>
-  </div>
+</div>
 
-  <div class="footer">
+<div class="footer">
     <p>Swipe to see more</p>
     <div class="icon">&#8595;</div>
-  </div>
+</div>
 
 </body>
 </html>

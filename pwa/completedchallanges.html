@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #f0f0f0;
         }
+
         .container {
             width: 100%;
             max-width: 600px;
@@ -18,14 +19,33 @@
             background-color: #fff;
             padding: 20px;
         }
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
+
+        .container-footer {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: lightgrey;
+            border-radius: 25px;
+            padding: 15px;
+
+            margin: 0 20px 40px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
         .header h1 {
             font-size: 24px;
             margin: 0;
         }
+
         .header .tabs button {
             padding: 10px 20px;
             margin: 0 10px;
@@ -33,35 +53,43 @@
             background-color: #e0e0e0;
             cursor: pointer;
         }
+
         .header .tabs button.active {
             background-color: #7AC73C;
             color: white;
         }
+
         .completed-challenges {
             margin-top: 20px;
         }
+
         .challenge {
             background-color: #B5E5A3;
             margin-bottom: 15px;
             border-radius: 10px;
             padding: 15px;
         }
+
         .challenge img {
             max-width: 100%;
             border-radius: 8px;
         }
+
         .challenge .info {
             margin-top: 10px;
         }
+
         .challenge .info h3 {
             margin: 5px 0;
             font-size: 18px;
         }
+
         .footer {
             display: flex;
             justify-content: space-around;
             margin-top: 30px;
         }
+
         .footer button {
             padding: 10px 20px;
             background-color: #E0E0E0;
@@ -71,37 +99,42 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Completed Challenges</h1>
-            <div class="tabs">
-                <button class="active">This week</button>
-                <button>This month</button>
+<div class="container">
+    <div class="header">
+        <h1>Completed Challenges</h1>
+        <div class="tabs">
+            <button class="active">This week</button>
+            <button>This month</button>
+        </div>
+    </div>
+
+    <div class="completed-challenges">
+        <div class="challenge">
+            <img src="img/2png.png" alt="Recycling">
+            <div class="info">
+                <h3>01.11.2024</h3>
+                <p>Recycling</p>
             </div>
         </div>
-        
-        <div class="completed-challenges">
-            <div class="challenge">
-                <img src="img/2png.png" alt="Recycling">
-                <div class="info">
-                    <h3>01.11.2024</h3>
-                    <p>Recycling</p>
-                </div>
+        <div class="challenge">
+            <img src="img/wind.png" alt="Wind energy">
+            <div class="info">
+                <h3>30.10.2024</h3>
+                <p>Wind energy</p>
             </div>
-            <div class="challenge">
-                <img src="img/wind.png" alt="Wind energy">
-                <div class="info">
-                    <h3>30.10.2024</h3>
-                    <p>Wind energy</p>
-                </div>
-            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <a href="completedchallanges.html">My profile</a>
+
+            <a href="availableChallenges.html">Challenges</a>
+
+            <a href="knowledgeArea.html">Categories</a>
         </div>
 
-        <footer>
-            <a href="firstPage.html">Home</a> 
-             <a href="availableChallenges.html">Challenges</a>
-             <a href="knowledgeArea.html">Categories</a>
-        </footer>
-    </div>
+    </footer>
+</div>
 </body>
 </html>
