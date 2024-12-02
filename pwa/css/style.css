@@ -35,3 +35,9 @@ html, .fullscreen {
 .title {
   font-size: 5vw;
 }
+
+#daily-chalenge{
+  width: 50% !important;
+  margin: auto !important;
+  grid-gap: 10px !important;
+}

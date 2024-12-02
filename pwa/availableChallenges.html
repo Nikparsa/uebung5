@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenges Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header a {
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .search-bar {
+      margin-bottom: 20px;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 10px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .challenges {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .challenge-card {
+      background-color: #ffc0cb;
+      border-radius: 10px;
+      padding: 15px;
+      width: 90%;
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .challenge-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .challenge-card h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      background-color: #eaeaea;
+      padding: 10px 0;
+    }
+
+    .footer a {
+      text-decoration: none;
+      font-size: 16px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <div class="content">
+    <div class="title">Available Challenges</div>
+    <div class="search-bar">
+      <input type="text" placeholder="search">
+    </div>
+
+    <div class="challenges">
+      <div class="challenge-card">
+        <img src="img/tiger.png" alt="Endangered species">
+        <h3>Endangered species</h3>
+      </div>
+      <div class="challenge-card">
+        <img src="img/1.png" alt="Forest protection">
+        <h3>Forest protection</h3>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="firstPage.html">Home</a>
+    <a href="completedchallanges.html">My profile</a> 
+     <a href="knowledgeArea.html">Categories</a>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/manifest.json">
+    <title>Eco ArtVoyage - Congratulations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .success-icon {
+            background-color: #28a745;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+            font-size: 30px;
+        }
+        .message {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .info-box {
+            background-color: #c8e6c9;
+            color: #388e3c;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✔</div>
+        <h1>Fantastic!</h1>
+        <p class="message">You make the earth better!</p>
+        <div class="info-box">
+            Recycling just one aluminium can saves enough energy to power a TV for three hours. This is because producing new aluminium from recycling cans requires 95% less energy than making aluminium from raw materials. Every year, recycling aluminium cans saves enough energy to power 4 million homes.
+        </div>
+        <button class="btn" id="newCategoryBtn">New Category</button>
+    </div>
+
+    <footer>
+        <a href="#">My profile</a> | <a href="#">Challenges</a> | <a href="#">Categories</a>
+    </footer>
+
+    <script>
+        // New Category button functionality
+        document.getElementById('newCategoryBtn').addEventListener('click', function() {
+            window.location.href = 'knowledgeArea.html'; // Redirects to knowledgeArea.html
+        });
+    </script>
+</body>
+</html>
