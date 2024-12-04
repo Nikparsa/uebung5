@@ -59,7 +59,7 @@
             color: white;
             padding: 20px 45px;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
             font-size: 20px;
         }
@@ -94,8 +94,8 @@
 
         .info-icon {
             position: fixed;
-            top: 10px;
-            right: 10px;
+            top: 0px;
+            right: 0px;
             font-size: 24px;
             color: #007bff;
             cursor: pointer;
@@ -116,7 +116,7 @@
 
         footer a {
             text-decoration: none;
-            color: #007bff;
+            color: black;
         }
 
         nav {
@@ -173,23 +173,5 @@
     </div>
 
 </footer>
-
-
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js')
-            .then(function (registration) {
-                console.log('Service Worker registered with scope:', registration.scope);
-            })
-            .catch(function (error) {
-                console.log('Service Worker registration failed:', error);
-            });
-    }
-
-    // Example of functionality for the "Start Challenge!" button
-    document.getElementById('startChallengeBtn').addEventListener('click', function () {
-        alert('Challenge started!');
-    });
-</script>
 </body>
 </html>
